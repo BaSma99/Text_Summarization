@@ -10,6 +10,7 @@ Text Summarization
               - we applied Summrization Model like Bert and LSA .
 
 Implementation Steps:
+
        1- Preprocessing:
             - preprocessing our divides into label, text, and text summary.
             
@@ -26,16 +27,21 @@ Implementation Steps:
              
              - Split the data into cleaned text that include only text after cleaning it with their labels 
              
-       3- Perform Feature Engineer it is very important tb be able to deal with model by help us convert text sentences into numeric vectors. 
+       3- Perform Feature Engineer:
+       
+                - It is very important tb be able to deal with model by help us convert text sentences into numeric vectors. 
                 
-                1- BOW The Bag of Words is a method often used for document classification. 
-                        - This method turns text into fixed-length vectors by simply counting the number of times a word appears in a document, 
+                1- BOW The Bag of Words is a method often used for document classification:
+                
+                        - This method turns text into fixed-length vectors by simply counting the number of times a word appears in a document.
                         
                         - process referred to as vectorization. 
                         
                         - As we said that we split the data. So, we applied BOW to training and testing data. 
                 
-                2- Tf-IDF Term frequency works by looking at the frequency of a particular term you are concerned with relative to the document. 
+                2- Tf-IDF Term frequency:
+                
+                        - works by looking at the frequency of a particular term you are concerned with relative to the document. 
                 
                         - There are multiple measures, or ways, of defining frequency As we said that we split the data. 
                         
@@ -47,8 +53,8 @@ Implementation Steps:
                 1- SVM Support vector machines: 
                         - are a set of supervised learning methods used for classification, regression, and outliers detection. 
                         
-                        - All of these are common tasks in machine learning. we applied it with Bow and give the accuracy 93% and with Tf-idf 95%
-
+                        - All of these are common tasks in machine learning. 
+                        
                 2- Decision Tree: 
                 
                        - Decision Tree is the most powerful and popular tool for classification and prediction. 
@@ -73,11 +79,16 @@ Implementation Steps:
           5- Summrization Techniques:
           
                1- Bert summarization:
+               
                         - BERT is the encoder of transformers, and it consists of 12 layers in the base model, and 24 layers for the large model. 
-                        - So, we can take the output of these layers as an embedding vector from the pretrained model. 
-                        - There are three approaches to the embedding vectors: concatenate the last four layers, the sum of the last four layers, or embed the full sentence by taking the mean of the embedding vectors of the tokenized word 
                         
-                2- LSA 
+                        - So, we can take the output of these layers as an embedding vector from the pretrained model. 
+                       
+                       - There are three approaches to the embedding vectors: concatenate the last four layers
+                       
+                       - the sum of the last four layers, or embed the full sentence by taking the mean of the embedding vectors of the tokenized word 
+                        
+               2- LSA summariation.
                
            6- Chatbot Question and answering system:
            
